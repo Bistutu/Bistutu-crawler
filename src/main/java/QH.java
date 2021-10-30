@@ -20,7 +20,7 @@ public class QH {
 			date = "2021-"+month+"-" + day;
 			time = 0;
 			int colorNumber=0;
-			printWriter = new PrintWriter(new File("C:/Users/康/Desktop/空教室数据/3/3"+month + day + ".json"));
+			printWriter = new PrintWriter(new File("C:\\Users\\1\\Desktop\\空教室数据/3/3"+month + day + ".json"));
 			printWriter.print("[");
 			
 			while (time < 1000) {

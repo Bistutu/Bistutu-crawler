@@ -3,8 +3,6 @@ import java.io.FileNotFoundException;
 
 import javax.naming.ldap.StartTlsRequest;
 
-
-
 public class Unicode {
 	public static void main(String[] args) throws Exception {
 		int month=11;
