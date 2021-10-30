@@ -20,7 +20,7 @@ public class JXQ {
 			date = "2021-"+month+"-" + day;
 			time = 0;
 			int colorNumber=0;
-			printWriter = new PrintWriter(new File("/Users/thinkstu/Desktop/emptyData/2/2"+month + day + ".json"));
+			printWriter = new PrintWriter(new File("C:/Users/康/Desktop/空教室数据/2/2"+month + day + ".json"));
 			printWriter.print("[");
 			
 			while (time < 1000) {
