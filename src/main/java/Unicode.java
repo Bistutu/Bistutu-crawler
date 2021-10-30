@@ -23,7 +23,7 @@ public class Unicode {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-			System.out.print("Time：" + (System.currentTimeMillis() - startTime) + " ms    ");
+			System.out.print("Time： " + (System.currentTimeMillis() - startTime) + " ms    ");
 		}).start();
 		new Thread(() -> {
 			try {
@@ -34,7 +34,7 @@ public class Unicode {
 		}).start();
 		new Thread(() -> {
 			try {
-				QH qh = new QH(month,day, terminalDay);
+				QH qh =new QH(month,day, terminalDay);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
