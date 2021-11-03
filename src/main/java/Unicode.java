@@ -3,11 +3,13 @@ import java.io.FileNotFoundException;
 
 import javax.naming.ldap.StartTlsRequest;
 
+
+
 public class Unicode {
 	public static void main(String[] args) throws Exception {
 		int month=11;
-		int day = 1;
-		int terminalDay = 5;
+		int day = 4;
+		int terminalDay = 6;
 		// 开始执行采集操作
 		startThread(month,day, terminalDay);
 	}
@@ -21,7 +23,7 @@ public class Unicode {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-			System.out.print("Time： " + (System.currentTimeMillis() - startTime) + " ms    ");
+			System.out.print("Time：" + (System.currentTimeMillis() - startTime) + " ms    ");
 		}).start();
 		new Thread(() -> {
 			try {
@@ -32,7 +34,7 @@ public class Unicode {
 		}).start();
 		new Thread(() -> {
 			try {
-				QH qh =new QH(month,day, terminalDay);
+				QH qh = new QH(month,day, terminalDay);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
