@@ -69,7 +69,7 @@ public class JXQ {
 				}
 
 				String postBody = "XXXQDM=2&JASLXDM=02&KXRQ=" + date + "&KSJC=" + KSJC + "&JSJC=" + JSJC;
-				data = post.sendPost("http://jwxt.bistu.edu.cn/jwapp/sys/kxjas/modules/kxjscx/cxkxjs.do",
+				data = post.sendPost("",
 						postBody);
 				int begin = data.indexOf("rows") + 6;
 				int end = data.lastIndexOf("]");
