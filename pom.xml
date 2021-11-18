@@ -3,12 +3,30 @@
   <groupId>com.thinkstu</groupId>
   <artifactId>fromjson</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
   <dependency>
      <groupId>com.alibaba</groupId>
      <artifactId>fastjson</artifactId>
-     <version>1.2.58</version>
+     <version>1.2.73</version>
  </dependency>
+<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+<dependency>
+    <groupId>com.squareup.okhttp3</groupId>
+    <artifactId>okhttp</artifactId>
+    <version>3.1.0</version>
+</dependency>
   </dependencies>
 </project>

@@ -9,7 +9,7 @@ import com.alibaba.fastjson.JSON;
 
 public class QH {
 
-	public QH(int month,int day,int teiminalDay) throws FileNotFoundException {
+	public QH(int month,int day,int teiminalDay) throws Exception {
 		int KSJC=0,JSJC=0;
 		String date,data;
 		PrintWriter printWriter = null;
@@ -20,7 +20,7 @@ public class QH {
 			date = "2021-"+month+"-" + day;
 			time = 0;
 			int colorNumber=0;
-			printWriter = new PrintWriter(new File(Path.path+"/3/3"+month + day + ".json"));
+			printWriter = new PrintWriter(new File(Path.getPath()+"/3/3"+month + day + ".json"));
 			printWriter.print("[");
 			
 			while (time < 1000) {
@@ -69,7 +69,7 @@ public class QH {
 				}
 
 				String postBody = "XXXQDM=3&JASLXDM=02&KXRQ=" + date + "&KSJC=" + KSJC + "&JSJC=" + JSJC;
-				data = post.sendPost("",
+				data = post.sendPost(Path.getKey(),
 						postBody);
 				int begin = data.indexOf("rows") + 6;
 				int end = data.lastIndexOf("]");
