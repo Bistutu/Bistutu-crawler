@@ -4,7 +4,7 @@ public class Path {
 	/*
 	* good lucky for you.
 	* */
-	private static  String key="";
+	private static  String key="http://jwxt.bistu.edu.cn/jwapp/sys/kxjas/modules/kxjscx/cxkxjs.do/";
 
 	public static String getKey() {
 		return key;
